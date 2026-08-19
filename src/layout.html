@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id" data-lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B3D5C">
+
+  <!-- SEO -->
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="keywords" content="KAKI, Koalisi Anti Korupsi Indonesia, CAC Indonesia, collective action, anti korupsi, antisuap, 75 checklist, ISO 37001, IICD, CIPE, sertifikasi antisuap">
+  <meta name="author" content="Koalisi Anti Korupsi Indonesia (KAKI)">
+  <link rel="canonical" href="https://cac-indonesia.or.id/{{CANONICAL}}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CAC Indonesia">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:url" content="https://cac-indonesia.or.id/{{CANONICAL}}">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:image" content="https://cac-indonesia.or.id/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{TITLE}}">
+  <meta name="twitter:description" content="{{DESCRIPTION}}">
+  <meta name="twitter:image" content="https://cac-indonesia.or.id/assets/img/og-image.jpg">
+
+  <!-- Favicon (inline SVG placeholder — ganti dengan file asli saat deploy) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%230B3D5C'/%3E%3Cpath d='M20 9l9 3.5v7.2C29 26 25.2 30.6 20 32.4 14.8 30.6 11 26 11 19.7v-7.2L20 9z' fill='none' stroke='%232AA9A0' stroke-width='2.4' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Bahasa: dimuat di <head> supaya tidak ada kedipan bahasa yang salah -->
+  <script src="js/i18n.js"></script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Koalisi Anti Korupsi Indonesia",
+    "alternateName": ["KAKI", "CAC Indonesia"],
+    "url": "https://cac-indonesia.or.id/",
+    "foundingDate": "2018",
+    "description": "Suatu platform bagi sektor swasta Indonesia untuk secara kolektif menciptakan, mengadopsi, dan menyebarkan kebijakan anti-korupsi dan kepatuhan yang efektif.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gedung Prof. M. Sadli (Gedung Magister Akuntansi) Lt. 1, Jl. Salemba No.4, RT.4/RW.6, Kenari, Kec. Senen",
+      "addressLocality": "Jakarta Pusat",
+      "addressRegion": "DKI Jakarta",
+      "postalCode": "10430",
+      "addressCountry": "ID"
+    },
+    "email": "kaki.secretariat@iicd.or.id",
+    "sameAs": ["https://www.youtube.com/channel/UCcSg9Xd0r3ZtyU6OS3qcvMQ"],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "16:00"
+    }
+  }
+  </script>
+</head>
+<body data-page="{{PAGE}}"
+      data-title-id="{{TITLE}}" data-title-en="{{TITLE_EN}}"
+      data-desc-id="{{DESCRIPTION}}" data-desc-en="{{DESCRIPTION_EN}}">
+
+  <!-- Preloader — struktur sama dengan blok yang sudah ada (masih di-comment)
+       pada layouts/public.blade.php. aria-hidden karena isi halaman sudah
+       lengkap di DOM; pembaca layar tidak perlu menunggu. -->
+  <div class="preloader" data-preloader aria-hidden="true">
+    <div class="preloader__image"></div>
+    <div class="preloader__bar"></div>
+  </div>
+  <noscript><style>.preloader { display: none; }</style></noscript>
+  <script>
+    /* Failsafe: preloader tidak boleh menahan halaman bila js/main.js gagal dimuat. */
+    setTimeout(function () {
+      var p = document.querySelector('[data-preloader]');
+      if (p) p.classList.add('is-done');
+    }, 6000);
+  </script>
+
+  <a class="skip-link" href="#main" data-i18n="common.skip">Lewati ke konten utama</a>
+
+<!--@include header-->
+
+  <main id="main">
+{{CONTENT}}
+  </main>
+
+<!--@include footer-->
+
+  <!-- Tombol kembali ke atas -->
+  <button class="to-top" type="button" data-to-top data-i18n-aria="common.toTop" aria-label="Kembali ke atas halaman">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

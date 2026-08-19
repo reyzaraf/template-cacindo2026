@@ -1,0 +1,299 @@
+<!--@meta
+title: CAC Indonesia - Koalisi Anti Korupsi Indonesia
+title_en: CAC Indonesia - Indonesia Anti-Corruption Coalition
+description: KAKI / CAC Indonesia — platform bagi sektor swasta Indonesia untuk secara kolektif menciptakan, mengadopsi, dan menyebarkan kebijakan anti-korupsi dan kepatuhan yang efektif.
+description_en: KAKI / CAC Indonesia — a platform for Indonesia's private sector to collectively create, adopt, and spread effective anti-corruption and compliance policies.
+page: home
+output: index.html
+-->
+    <!-- ============================================================
+         MAIN SLIDER  →  @foreach ($sliders as $slider)
+         Sumber: tabel sliders (admin ▸ Sliders), urut kolom `position`
+         ============================================================ -->
+    <section class="main-slider clearfix" aria-labelledby="pageTitle">
+      <h1 class="sr-only" id="pageTitle">CAC Indonesia — Koalisi Anti Korupsi Indonesia (KAKI)</h1>
+      <div class="main-slider__viewport" data-slider>
+        <div class="main-slider__track" data-slider-track>
+          <div class="main-slider__slide">
+            <img src="assets/img/slider-1.jpg" width="1600" height="600"
+                 alt="Kegiatan Koalisi Anti Korupsi Indonesia" loading="eager" decoding="async">
+          </div>
+          <div class="main-slider__slide">
+            <img src="assets/img/slider-2.jpg" width="1600" height="600"
+                 alt="Forum dan seminar integritas dunia usaha" loading="lazy" decoding="async">
+          </div>
+          <div class="main-slider__slide">
+            <img src="assets/img/slider-3.jpg" width="1600" height="600"
+                 alt="Penandatanganan komitmen anti-korupsi oleh perusahaan anggota" loading="lazy" decoding="async">
+          </div>
+        </div>
+
+        <button class="main-slider__nav main-slider__prev" type="button" data-slider-prev
+                data-i18n-aria="home.prevSlide" aria-label="Slide sebelumnya">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button class="main-slider__nav main-slider__next" type="button" data-slider-next
+                data-i18n-aria="home.nextSlide" aria-label="Slide berikutnya">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+
+        <div class="main-slider__pagination" data-slider-pagination role="tablist" aria-label="Slide"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SEMINAR AND EVENT  →  @foreach ($events->slice(0,4))
+         Sumber: tabel events (admin ▸ Events). Kolom kanan = video YouTube.
+         ============================================================ -->
+    <section class="seminar-event">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-8 col-sm-12">
+            <div class="section-title reveal">
+              <div class="section-sub-title-box">
+                <div class="section-title-shape-1" aria-hidden="true"></div>
+                <p class="section-sub-title" data-i18n="list.sub">informasi terkini</p>
+              </div>
+              <h2 class="section-title__title" data-i18n="home.eventsTitle">Seminar &amp; Kegiatan</h2>
+            </div>
+
+            <div class="card mb-3 reveal">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <div class="card__media">
+                    <img class="card-img" src="assets/img/event-1.jpg" width="600" height="400"
+                         alt="Seminar KAKI di Bursa Efek Indonesia" loading="lazy" decoding="async">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="card-meta-row">
+                      <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="nav.events">Kegiatan</span></span>
+                      <span class="card-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">1 bulan yang lalu</span><span lang="en">1 month ago</span></span>
+                    </div>
+                    <h3 class="card-title"><a href="artikel-pasar-modal.html">KAKI Dorong Transparansi Kepemilikan untuk Memperkuat Integritas Pasar Modal Indonesia</a></h3>
+                    <p class="card-text">Jakarta, 18 Juni 2026 – KAKI dan IICD bekerja sama dengan Bursa Efek Indonesia (BEI), didukung CIPE, AEI, dan IGCN, menyelenggarakan “Strengthening Market Integrity: Towards a New Era of Ownership Transparency in the Capital Market” di Main Hall BEI, Jakarta.</p>
+                    <span class="card__more"><span data-i18n="card.readMore">Selengkapnya</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 reveal" style="--delay:80ms">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <div class="card__media">
+                    <img class="card-img" src="assets/img/event-2.jpg" width="600" height="400"
+                         alt="Webinar KAKI dalam rangka HAKORDIA 2025" loading="lazy" decoding="async">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="card-meta-row">
+                      <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="nav.events">Kegiatan</span></span>
+                      <span class="card-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">6 bulan yang lalu</span><span lang="en">6 months ago</span></span>
+                    </div>
+                    <h3 class="card-title"><a href="artikel-kuhp-2023.html">Webinar KAKI — KUHP 2023 dan Dunia Usaha: Integritas Beralih dari Nilai Moral ke Strategi Perlindungan Korporasi</a></h3>
+                    <p class="card-text">Menjelang berlakunya KUHP 2023 pada Januari 2026, webinar KAKI bersama IICD dalam rangka HAKORDIA 2025 menegaskan bahwa integritas kini menjadi tameng strategis bagi korporasi dan para pengurusnya.</p>
+                    <span class="card__more"><span data-i18n="card.readMore">Selengkapnya</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 reveal" style="--delay:160ms">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <div class="card__media">
+                    <img class="card-img" src="assets/img/event-3.jpg" width="600" height="400"
+                         alt="Artikel governansi dan integritas korporasi" loading="lazy" decoding="async">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="card-meta-row">
+                      <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="nav.events">Kegiatan</span></span>
+                      <span class="card-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">11 bulan yang lalu</span><span lang="en">11 months ago</span></span>
+                    </div>
+                    <h3 class="card-title"><a href="artikel-80-tahun-indonesia.html">80 Tahun Indonesia, Saatnya Meneguhkan Governansi dan Integritas Korporasi</a></h3>
+                    <p class="card-text">Di balik perayaan kemerdekaan, ada satu pertanyaan penting: bagaimana sektor swasta bisa memberikan kontribusi nyata bagi perjalanan Indonesia ke depan? Jawabannya ada pada penerapan governansi korporat yang baik.</p>
+                    <span class="card__more"><span data-i18n="card.readMore">Selengkapnya</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-cta" style="text-align:left">
+              <a class="thm-btn btn--outline" href="seminar.html">
+                <span data-i18n="home.eventsAll">Lihat semua kegiatan</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-12">
+            <div class="video-embed reveal" style="--delay:120ms">
+              <iframe
+                src="https://www.youtube.com/embed/YY3pIMFfibM"
+                title="Webinar: Understanding How To Prevent Corruption In New Reality"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+              <p class="video-embed__caption" data-i18n="home.videoCap">
+                Webinar: Understanding How To Prevent Corruption In New Reality
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         NEWS ONE  →  @foreach ($news->slice(0,4))
+         Sumber: tabel medias kategori "news" (admin ▸ Medias)
+         ============================================================ -->
+    <section class="news-one section--alt">
+      <div class="container">
+
+        <div class="section-title text-center reveal">
+          <div class="section-sub-title-box">
+            <div class="section-title-shape-1" aria-hidden="true"></div>
+            <p class="section-sub-title" data-i18n="home.newsSub">kabar terbaru</p>
+            <div class="section-title-shape-2" aria-hidden="true"></div>
+          </div>
+          <h2 class="section-title__title" data-i18n="home.newsTitle">Sorotan Berita</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-sm-12 reveal">
+            <div class="news-one__single">
+              <div class="news-one__img">
+                <img src="assets/img/news-1.jpg" width="800" height="450" alt="KAKI dalam OECD Fact-Finding Mission" loading="lazy" decoding="async">
+              </div>
+              <div class="news-one__content">
+                <div class="news-one__meta">
+                  <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="card.tag">sorotan</span></span>
+                  <span class="news-one__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">1 bulan yang lalu</span><span lang="en">1 month ago</span></span>
+                </div>
+                <h3 class="news-one__title"><a href="artikel-oecd-fact-finding.html">KAKI Hadir dalam OECD Fact-Finding Mission, Dorong Integritas dan Kepastian Hukum dalam Proses Aksesi Indonesia ke OECD</a></h3>
+                <p class="news-one__text">Koalisi Anti Korupsi Indonesia (KAKI), yang diwakili oleh Ketua KAKI, Erry Riyana Hardjapamekas, berpartisipasi dalam OECD Fact-Finding Mission dan Gap Analysis terkait OECD Anti-Bribery Convention.</p>
+                <span class="news-one__read-more"><span data-i18n="card.readMore">Selengkapnya</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-sm-12 reveal" style="--delay:100ms">
+            <div class="news-one__single">
+              <div class="news-one__img">
+                <img src="assets/img/news-2.jpg" width="800" height="450" alt="Ketua KAKI dalam forum UNODC" loading="lazy" decoding="async">
+              </div>
+              <div class="news-one__content">
+                <div class="news-one__meta">
+                  <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="card.tag">sorotan</span></span>
+                  <span class="news-one__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">5 bulan yang lalu</span><span lang="en">5 months ago</span></span>
+                </div>
+                <h3 class="news-one__title"><a href="artikel-forum-unodc.html">Ketua KAKI Erry Riyana Hardjapamekas Tekankan Pentingnya Reformasi Antikorupsi di Forum UNODC</a></h3>
+                <p class="news-one__text">Ketua Koalisi Anti Korupsi Indonesia menjadi narasumber dalam UNODC National Workshop dan menegaskan pentingnya percepatan reformasi hukum antikorupsi di Indonesia.</p>
+                <span class="news-one__read-more"><span data-i18n="card.readMore">Selengkapnya</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-sm-12 reveal" style="--delay:60ms">
+            <div class="news-one__single">
+              <div class="news-one__img">
+                <img src="assets/img/news-3.jpg" width="800" height="450" alt="KAKI di ACE Award 2025 dan 11th CoSP Doha" loading="lazy" decoding="async">
+              </div>
+              <div class="news-one__content">
+                <div class="news-one__meta">
+                  <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="card.tag">sorotan</span></span>
+                  <span class="news-one__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">6 bulan yang lalu</span><span lang="en">6 months ago</span></span>
+                </div>
+                <h3 class="news-one__title"><a href="artikel-ace-award-doha.html">KAKI Perkuat Komitmen Global dalam Pemberantasan Korupsi di ACE Award 2025 dan 11th CoSP Doha Qatar</a></h3>
+                <p class="news-one__text">KAKI menegaskan kembali komitmennya terhadap integritas, transparansi, dan praktik bisnis beretika melalui partisipasi aktif dalam rangkaian forum anti-korupsi internasional di Doha, Qatar, pada 14–16 Desember 2025.</p>
+                <span class="news-one__read-more"><span data-i18n="card.readMore">Selengkapnya</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-sm-12 reveal" style="--delay:160ms">
+            <div class="news-one__single">
+              <div class="news-one__img">
+                <img src="assets/img/news-4.jpg" width="800" height="450" alt="Arsip berita KAKI" loading="lazy" decoding="async">
+              </div>
+              <div class="news-one__content">
+                <div class="news-one__meta">
+                  <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="card.tag">sorotan</span></span>
+                  <span class="news-one__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">Arsip</span><span lang="en">Archive</span></span>
+                </div>
+                <h3 class="news-one__title"><a href="news.html"><span lang="id">Semua Berita dari KAKI</span><span lang="en">All News from KAKI</span></a></h3>
+                <p class="news-one__text"><span lang="id">Kartu keempat mengikuti $news-&gt;slice(0,4) pada blade — otomatis terisi berita berikutnya dari admin panel.</span><span lang="en">This fourth card follows $news-&gt;slice(0,4) in the blade — it fills automatically with the next item from the admin panel.</span></p>
+                <span class="news-one__read-more"><span data-i18n="card.readMore">Selengkapnya</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-cta reveal">
+          <a class="thm-btn btn--outline" href="news.html">
+            <span data-i18n="home.newsAll">Lihat semua berita</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SUPPORTED BY  →  @foreach ($partners as $partner)
+         Sumber: tabel partners (admin ▸ Partners), urut kolom `position`
+         ============================================================ -->
+    <section class="supported">
+      <div class="container">
+        <div class="section-title text-center reveal">
+          <div class="section-sub-title-box">
+            <div class="section-title-shape-1" aria-hidden="true"></div>
+            <p class="section-sub-title" data-i18n="home.supportedSub">mitra &amp; asosiasi</p>
+            <div class="section-title-shape-2" aria-hidden="true"></div>
+          </div>
+          <h2 class="section-title__title" data-i18n="home.supported">Didukung Oleh</h2>
+        </div>
+
+        <div class="supported__viewport" data-marquee>
+          <div class="supported__track" data-marquee-track>
+            <div class="supported__item"><span>IICD</span></div>
+            <div class="supported__item"><span>CIPE</span></div>
+            <div class="supported__item"><span>KADIN Indonesia</span></div>
+            <div class="supported__item"><span>AEI</span></div>
+            <div class="supported__item"><span>Indonesia Business Links</span></div>
+            <div class="supported__item"><span>APINDO</span></div>
+            <div class="supported__item"><span>IICG</span></div>
+            <div class="supported__item"><span>IGCN</span></div>
+            <div class="supported__item"><span>KNKG</span></div>
+            <div class="supported__item"><span>GRC</span></div>
+            <div class="supported__item"><span>HIPMI Kota Bandung</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TRACKING (CTA)  →  section.tracking pada blade
+         ============================================================ -->
+    <section class="tracking">
+      <div class="container">
+        <div class="tracking__inner reveal">
+          <div class="tracking__left">
+            <div class="tracking__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="tracking__content">
+              <p class="tracking__sub-title" data-i18n="home.trackSub">Punya pertanyaan?</p>
+              <h2 class="tracking__title" data-i18n="home.trackTitle">Hubungi kontak kami</h2>
+            </div>
+          </div>
+          <div class="tracking__btn-box">
+            <a href="contact.html" class="thm-btn tracking__btn">
+              <span data-i18n="home.trackBtn">Kontak</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>

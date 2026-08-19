@@ -1,0 +1,206 @@
+  <!-- ============================================================
+       HEADER START  →  blade: components/public/navbar2.blade.php
+       Struktur menu mengikuti dokumen struktur situs baru:
+         Home · Who We Are · Membership · Integrity Assessment ·
+         Knowledge Hub · Events & Media · Contact
+       Label memakai data-i18n → di Laravel jadi {{ __('site.nav.home') }}
+       Pengalih bahasa menggantikan <div id="google_translate_button">
+       ============================================================ -->
+  <header class="main-header clearfix">
+
+    <!-- Bar atas: alamat + email + bahasa -->
+    <div class="main-header__top">
+      <div class="container">
+        <div class="main-header__top-inner">
+          <div class="main-header__top-address">
+            <ul class="list-unstyled main-header__top-address-list">
+              <li>
+                <i class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </i>
+                <div class="text">
+                  <p data-i18n="top.address">Gedung Prof. M. Sadli (Gedung Magister Akuntansi) Lt. 1 Jl. Salemba No.4, RT.4/RW.6, Kenari</p>
+                </div>
+              </li>
+              <li>
+                <i class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+                </i>
+                <div class="text">
+                  <p><a href="mailto:KAKI.secretariat@gmail.com">KAKI.secretariat@gmail.com</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main-header__top-right">
+            <div class="main-header__top-menu-box">
+              <ul class="list-unstyled main-header__top-menu">
+                <li><a href="about.html" data-i18n="top.about">Tentang</a></li>
+              </ul>
+            </div>
+
+            <div class="lang-switch" role="group" data-i18n-aria="lang.switch" aria-label="Pilih bahasa">
+              <button class="lang-switch__btn" type="button" data-lang-btn="id" aria-pressed="true">ID</button>
+              <button class="lang-switch__btn" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu utama -->
+    <nav class="main-menu clearfix" data-main-menu aria-label="Navigasi utama">
+      <div class="main-menu__wrapper clearfix">
+        <div class="container">
+          <div class="main-menu__wrapper-inner clearfix">
+
+            <div class="main-menu__logo">
+              <a href="index.html">
+                <img src="assets/img/logo-kaki.png" width="143" height="43"
+                     alt="KAKI — Koalisi Anti Korupsi Indonesia" loading="eager" decoding="async">
+              </a>
+            </div>
+
+            <div class="main-menu__left">
+              <div class="main-menu__main-menu-box">
+                <div class="main-menu__main-menu-box-inner">
+
+                  <ul class="main-menu__list">
+                    <li><a href="index.html" data-i18n="nav.home">Beranda</a></li>
+
+                    <li class="dropdown" data-dropdown>
+                      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menuWhoWeAre" data-dropdown-trigger>
+                        <span data-i18n="nav.who">Tentang Kami</span>
+                        <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                      </button>
+                      <ul id="menuWhoWeAre">
+                        <li><a href="about.html" data-i18n="nav.about">Tentang KAKI</a></li>
+                        <li><a href="governance.html" data-i18n="nav.governance">Tata Kelola KAKI</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="dropdown" data-dropdown>
+                      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menuMembership" data-dropdown-trigger>
+                        <span data-i18n="nav.membership">Keanggotaan</span>
+                        <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                      </button>
+                      <ul id="menuMembership">
+                        <li><a href="why-join.html" data-i18n="nav.whyJoin">Mengapa Bergabung</a></li>
+                        <li><a href="member.html" data-i18n="nav.member">Anggota Kami</a></li>
+                        <li><a href="certification.html" data-i18n="nav.certification">Sertifikasi</a></li>
+                        <li><a href="join-us.html" data-i18n="nav.join">Bergabung</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="integrity-assessment.html" data-i18n="nav.assessment">Self-Assessment</a></li>
+
+                    <li class="dropdown" data-dropdown>
+                      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menuKnowledge" data-dropdown-trigger>
+                        <span data-i18n="nav.knowledge">Pusat Pengetahuan</span>
+                        <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                      </button>
+                      <ul id="menuKnowledge">
+                        <li><a href="anti-corruption-101.html" data-i18n="nav.ac101">Anti-Korupsi 101</a></li>
+                        <li><a href="regulations.html" data-i18n="nav.regulations">Regulasi</a></li>
+                        <li><a href="resources.html" data-i18n="nav.resources">Sumber Daya KAKI</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="events-media.html" data-i18n="nav.eventsMedia">Kegiatan &amp; Media</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Kontak</a></li>
+                  </ul>
+
+                  <button class="mobile-nav__toggler" type="button" data-nav-open
+                          data-i18n-aria="nav.open" aria-label="Buka menu navigasi"
+                          aria-expanded="false" aria-controls="mobileNav">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+                  </button>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Drawer navigasi mobile -->
+  <div class="mobile-nav__wrapper" id="mobileNav" data-mobile-nav aria-label="Navigasi mobile">
+    <div class="mobile-nav__head">
+      <img src="assets/img/logo-kaki.png" width="118" height="36" alt="KAKI — Koalisi Anti Korupsi Indonesia" loading="lazy" decoding="async">
+      <button class="mobile-nav__close" type="button" data-nav-close
+              data-i18n-aria="nav.close" aria-label="Tutup menu navigasi">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-nav__lang">
+      <div class="lang-switch" role="group" data-i18n-aria="lang.switch" aria-label="Pilih bahasa">
+        <button class="lang-switch__btn" type="button" data-lang-btn="id" aria-pressed="true">ID</button>
+        <button class="lang-switch__btn" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+
+    <ul class="mobile-nav__list">
+      <li><a href="index.html" data-i18n="nav.home">Beranda</a></li>
+
+      <li data-dropdown>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mMenuWho" data-dropdown-trigger>
+          <span data-i18n="nav.who">Tentang Kami</span>
+          <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul id="mMenuWho">
+          <li><a href="about.html" data-i18n="nav.about">Tentang KAKI</a></li>
+          <li><a href="governance.html" data-i18n="nav.governance">Tata Kelola KAKI</a></li>
+        </ul>
+      </li>
+
+      <li data-dropdown>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mMenuMembership" data-dropdown-trigger>
+          <span data-i18n="nav.membership">Keanggotaan</span>
+          <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul id="mMenuMembership">
+          <li><a href="why-join.html" data-i18n="nav.whyJoin">Mengapa Bergabung</a></li>
+          <li><a href="member.html" data-i18n="nav.member">Anggota Kami</a></li>
+          <li><a href="certification.html" data-i18n="nav.certification">Sertifikasi</a></li>
+          <li><a href="join-us.html" data-i18n="nav.join">Bergabung</a></li>
+        </ul>
+      </li>
+
+      <li><a href="integrity-assessment.html" data-i18n="nav.assessment">Self-Assessment</a></li>
+
+      <li data-dropdown>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mMenuKnowledge" data-dropdown-trigger>
+          <span data-i18n="nav.knowledge">Pusat Pengetahuan</span>
+          <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul id="mMenuKnowledge">
+          <li><a href="anti-corruption-101.html" data-i18n="nav.ac101">Anti-Korupsi 101</a></li>
+          <li><a href="regulations.html" data-i18n="nav.regulations">Regulasi</a></li>
+          <li><a href="resources.html" data-i18n="nav.resources">Sumber Daya KAKI</a></li>
+        </ul>
+      </li>
+
+      <li><a href="events-media.html" data-i18n="nav.eventsMedia">Kegiatan &amp; Media</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Kontak</a></li>
+    </ul>
+
+    <ul class="mobile-nav__contact">
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Gedung Prof. M. Sadli Lt. 1, Jl. Salemba No.4, Jakarta Pusat 10430</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        <a href="mailto:KAKI.secretariat@gmail.com">KAKI.secretariat@gmail.com</a>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-nav__overlay" data-nav-overlay hidden></div>
+  <!-- ============================================================
+       HEADER END
+       ============================================================ -->

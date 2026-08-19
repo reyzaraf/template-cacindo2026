@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     FILE INI DIHASILKAN OTOMATIS oleh build.py
+     Jangan edit langsung — ubah src/layout.html, src/pages/*.html,
+     atau src/partials/*.html lalu jalankan: python3 build.py
+     ============================================================ -->
+<html lang="id" data-lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B3D5C">
+
+  <!-- SEO -->
+  <title>Pelatihan — CAC Indonesia</title>
+  <meta name="description" content="Arsip pelatihan, workshop asesor 75 Checklist, roundtable, dan advokasi kebijakan KAKI.">
+  <meta name="keywords" content="KAKI, Koalisi Anti Korupsi Indonesia, CAC Indonesia, collective action, anti korupsi, antisuap, 75 checklist, ISO 37001, IICD, CIPE, sertifikasi antisuap">
+  <meta name="author" content="Koalisi Anti Korupsi Indonesia (KAKI)">
+  <link rel="canonical" href="https://cac-indonesia.or.id/training.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CAC Indonesia">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:url" content="https://cac-indonesia.or.id/training.html">
+  <meta property="og:title" content="Pelatihan — CAC Indonesia">
+  <meta property="og:description" content="Arsip pelatihan, workshop asesor 75 Checklist, roundtable, dan advokasi kebijakan KAKI.">
+  <meta property="og:image" content="https://cac-indonesia.or.id/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pelatihan — CAC Indonesia">
+  <meta name="twitter:description" content="Arsip pelatihan, workshop asesor 75 Checklist, roundtable, dan advokasi kebijakan KAKI.">
+  <meta name="twitter:image" content="https://cac-indonesia.or.id/assets/img/og-image.jpg">
+
+  <!-- Favicon (inline SVG placeholder — ganti dengan file asli saat deploy) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%230B3D5C'/%3E%3Cpath d='M20 9l9 3.5v7.2C29 26 25.2 30.6 20 32.4 14.8 30.6 11 26 11 19.7v-7.2L20 9z' fill='none' stroke='%232AA9A0' stroke-width='2.4' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Bahasa: dimuat di <head> supaya tidak ada kedipan bahasa yang salah -->
+  <script src="js/i18n.js"></script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Koalisi Anti Korupsi Indonesia",
+    "alternateName": ["KAKI", "CAC Indonesia"],
+    "url": "https://cac-indonesia.or.id/",
+    "foundingDate": "2018",
+    "description": "Suatu platform bagi sektor swasta Indonesia untuk secara kolektif menciptakan, mengadopsi, dan menyebarkan kebijakan anti-korupsi dan kepatuhan yang efektif.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gedung Prof. M. Sadli (Gedung Magister Akuntansi) Lt. 1, Jl. Salemba No.4, RT.4/RW.6, Kenari, Kec. Senen",
+      "addressLocality": "Jakarta Pusat",
+      "addressRegion": "DKI Jakarta",
+      "postalCode": "10430",
+      "addressCountry": "ID"
+    },
+    "email": "kaki.secretariat@iicd.or.id",
+    "sameAs": ["https://www.youtube.com/channel/UCcSg9Xd0r3ZtyU6OS3qcvMQ"],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "16:00"
+    }
+  }
+  </script>
+</head>
+<body data-page="training"
+      data-title-id="Pelatihan — CAC Indonesia" data-title-en="Training — CAC Indonesia"
+      data-desc-id="Arsip pelatihan, workshop asesor 75 Checklist, roundtable, dan advokasi kebijakan KAKI." data-desc-en="Archive of KAKI training, 75 Checklist assessor workshops, roundtables, and policy advocacy.">
+
+  <!-- Preloader — struktur sama dengan blok yang sudah ada (masih di-comment)
+       pada layouts/public.blade.php. aria-hidden karena isi halaman sudah
+       lengkap di DOM; pembaca layar tidak perlu menunggu. -->
+  <div class="preloader" data-preloader aria-hidden="true">
+    <div class="preloader__image"></div>
+    <div class="preloader__bar"></div>
+  </div>
+  <noscript><style>.preloader { display: none; }</style></noscript>
+  <script>
+    /* Failsafe: preloader tidak boleh menahan halaman bila js/main.js gagal dimuat. */
+    setTimeout(function () {
+      var p = document.querySelector('[data-preloader]');
+      if (p) p.classList.add('is-done');
+    }, 6000);
+  </script>
+
+  <a class="skip-link" href="#main" data-i18n="common.skip">Lewati ke konten utama</a>
+
+  <!-- ============================================================
+       HEADER START  →  blade: components/public/navbar2.blade.php
+       Struktur menu mengikuti dokumen struktur situs baru:
+         Home · Who We Are · Membership · Integrity Assessment ·
+         Knowledge Hub · Events & Media · Contact
+       Label memakai data-i18n → di Laravel jadi {{ __('site.nav.home') }}
+       Pengalih bahasa menggantikan <div id="google_translate_button">
+       ============================================================ -->
+  <header class="main-header clearfix">
+
+    <!-- Bar atas: alamat + email + bahasa -->
+    <div class="main-header__top">
+      <div class="container">
+        <div class="main-header__top-inner">
+          <div class="main-header__top-address">
+            <ul class="list-unstyled main-header__top-address-list">
+              <li>
+                <i class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </i>
+                <div class="text">
+                  <p data-i18n="top.address">Gedung Prof. M. Sadli (Gedung Magister Akuntansi) Lt. 1 Jl. Salemba No.4, RT.4/RW.6, Kenari</p>
+                </div>
+              </li>
+              <li>
+                <i class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+                </i>
+                <div class="text">
+                  <p><a href="mailto:KAKI.secretariat@gmail.com">KAKI.secretariat@gmail.com</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main-header__top-right">
+            <div class="main-header__top-menu-box">
+              <ul class="list-unstyled main-header__top-menu">
+                <li><a href="about.html" data-i18n="top.about">Tentang</a></li>
+              </ul>
+            </div>
+
+            <div class="lang-switch" role="group" data-i18n-aria="lang.switch" aria-label="Pilih bahasa">
+              <button class="lang-switch__btn" type="button" data-lang-btn="id" aria-pressed="true">ID</button>
+              <button class="lang-switch__btn" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu utama -->
+    <nav class="main-menu clearfix" data-main-menu aria-label="Navigasi utama">
+      <div class="main-menu__wrapper clearfix">
+        <div class="container">
+          <div class="main-menu__wrapper-inner clearfix">
+
+            <div class="main-menu__logo">
+              <a href="index.html">
+                <img src="assets/img/logo-kaki.png" width="143" height="43"
+                     alt="KAKI — Koalisi Anti Korupsi Indonesia" loading="eager" decoding="async">
+              </a>
+            </div>
+
+            <div class="main-menu__left">
+              <div class="main-menu__main-menu-box">
+                <div class="main-menu__main-menu-box-inner">
+
+                  <ul class="main-menu__list">
+                    <li><a href="index.html" data-i18n="nav.home">Beranda</a></li>
+
+                    <li class="dropdown" data-dropdown>
+                      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menuWhoWeAre" data-dropdown-trigger>
+                        <span data-i18n="nav.who">Tentang Kami</span>
+                        <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                      </button>
+                      <ul id="menuWhoWeAre">
+                        <li><a href="about.html" data-i18n="nav.about">Tentang KAKI</a></li>
+                        <li><a href="governance.html" data-i18n="nav.governance">Tata Kelola KAKI</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="dropdown" data-dropdown>
+                      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menuMembership" data-dropdown-trigger>
+                        <span data-i18n="nav.membership">Keanggotaan</span>
+                        <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                      </button>
+                      <ul id="menuMembership">
+                        <li><a href="why-join.html" data-i18n="nav.whyJoin">Mengapa Bergabung</a></li>
+                        <li><a href="member.html" data-i18n="nav.member">Anggota Kami</a></li>
+                        <li><a href="certification.html" data-i18n="nav.certification">Sertifikasi</a></li>
+                        <li><a href="join-us.html" data-i18n="nav.join">Bergabung</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="integrity-assessment.html" data-i18n="nav.assessment">Self-Assessment</a></li>
+
+                    <li class="dropdown" data-dropdown>
+                      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menuKnowledge" data-dropdown-trigger>
+                        <span data-i18n="nav.knowledge">Pusat Pengetahuan</span>
+                        <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                      </button>
+                      <ul id="menuKnowledge">
+                        <li><a href="anti-corruption-101.html" data-i18n="nav.ac101">Anti-Korupsi 101</a></li>
+                        <li><a href="regulations.html" data-i18n="nav.regulations">Regulasi</a></li>
+                        <li><a href="resources.html" data-i18n="nav.resources">Sumber Daya KAKI</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="events-media.html" data-i18n="nav.eventsMedia">Kegiatan &amp; Media</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Kontak</a></li>
+                  </ul>
+
+                  <button class="mobile-nav__toggler" type="button" data-nav-open
+                          data-i18n-aria="nav.open" aria-label="Buka menu navigasi"
+                          aria-expanded="false" aria-controls="mobileNav">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+                  </button>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Drawer navigasi mobile -->
+  <div class="mobile-nav__wrapper" id="mobileNav" data-mobile-nav aria-label="Navigasi mobile">
+    <div class="mobile-nav__head">
+      <img src="assets/img/logo-kaki.png" width="118" height="36" alt="KAKI — Koalisi Anti Korupsi Indonesia" loading="lazy" decoding="async">
+      <button class="mobile-nav__close" type="button" data-nav-close
+              data-i18n-aria="nav.close" aria-label="Tutup menu navigasi">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-nav__lang">
+      <div class="lang-switch" role="group" data-i18n-aria="lang.switch" aria-label="Pilih bahasa">
+        <button class="lang-switch__btn" type="button" data-lang-btn="id" aria-pressed="true">ID</button>
+        <button class="lang-switch__btn" type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+
+    <ul class="mobile-nav__list">
+      <li><a href="index.html" data-i18n="nav.home">Beranda</a></li>
+
+      <li data-dropdown>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mMenuWho" data-dropdown-trigger>
+          <span data-i18n="nav.who">Tentang Kami</span>
+          <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul id="mMenuWho">
+          <li><a href="about.html" data-i18n="nav.about">Tentang KAKI</a></li>
+          <li><a href="governance.html" data-i18n="nav.governance">Tata Kelola KAKI</a></li>
+        </ul>
+      </li>
+
+      <li data-dropdown>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mMenuMembership" data-dropdown-trigger>
+          <span data-i18n="nav.membership">Keanggotaan</span>
+          <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul id="mMenuMembership">
+          <li><a href="why-join.html" data-i18n="nav.whyJoin">Mengapa Bergabung</a></li>
+          <li><a href="member.html" data-i18n="nav.member">Anggota Kami</a></li>
+          <li><a href="certification.html" data-i18n="nav.certification">Sertifikasi</a></li>
+          <li><a href="join-us.html" data-i18n="nav.join">Bergabung</a></li>
+        </ul>
+      </li>
+
+      <li><a href="integrity-assessment.html" data-i18n="nav.assessment">Self-Assessment</a></li>
+
+      <li data-dropdown>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mMenuKnowledge" data-dropdown-trigger>
+          <span data-i18n="nav.knowledge">Pusat Pengetahuan</span>
+          <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul id="mMenuKnowledge">
+          <li><a href="anti-corruption-101.html" data-i18n="nav.ac101">Anti-Korupsi 101</a></li>
+          <li><a href="regulations.html" data-i18n="nav.regulations">Regulasi</a></li>
+          <li><a href="resources.html" data-i18n="nav.resources">Sumber Daya KAKI</a></li>
+        </ul>
+      </li>
+
+      <li><a href="events-media.html" data-i18n="nav.eventsMedia">Kegiatan &amp; Media</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Kontak</a></li>
+    </ul>
+
+    <ul class="mobile-nav__contact">
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Gedung Prof. M. Sadli Lt. 1, Jl. Salemba No.4, Jakarta Pusat 10430</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        <a href="mailto:KAKI.secretariat@gmail.com">KAKI.secretariat@gmail.com</a>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-nav__overlay" data-nav-overlay hidden></div>
+  <!-- ============================================================
+       HEADER END
+       ============================================================ -->
+
+  <main id="main">
+    <!-- ============================================================
+         TRAINING — struktur sama dengan events.blade.php ($events, category=training)
+         ============================================================ -->
+    <section class="news-one">
+      <div class="container">
+
+        <div class="section-title text-center reveal">
+          <div class="section-sub-title-box">
+            <div class="section-title-shape-1" aria-hidden="true"></div>
+            <p class="section-sub-title" data-i18n="list.sub">informasi terkini</p>
+            <div class="section-title-shape-2" aria-hidden="true"></div>
+          </div>
+          <h1 class="section-title__title" data-i18n="page.training">page.training</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-sm-12 reveal" style="--delay:0ms">
+            <div class="news-one__single">
+              <div class="news-one__img">
+                <img src="assets/img/event-1.jpg" width="800" height="450" alt="" loading="lazy" decoding="async">
+              </div>
+              <div class="news-one__content">
+                <div class="news-one__meta">
+                  <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="page.training">page.training</span></span>
+                  <span class="news-one__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">27 Februari 2024</span><span lang="en">27 February 2024</span></span>
+                </div>
+                <h3 class="news-one__title"><span>KAKI Mensosialisasikan Peran Swasta dalam Implementasi IPEF (Indo-Pacific Economic Framework)</span></h3>
+                <p class="news-one__text">Roundtable Discussion bertajuk “Galvanizing the Private Sector: IPEF Commitments (Pilar 4) dan Dampaknya terhadap Dunia Usaha Indonesia” bersama IICD dan CIPE.</p>
+                <span class="news-one__read-more news-one__read-more--muted"><span lang="id">Arsip lengkap tersedia di situs KAKI</span><span lang="en">Full archive available on the KAKI website</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-sm-12 reveal" style="--delay:100ms">
+            <div class="news-one__single">
+              <div class="news-one__img">
+                <img src="assets/img/event-2.jpg" width="800" height="450" alt="" loading="lazy" decoding="async">
+              </div>
+              <div class="news-one__content">
+                <div class="news-one__meta">
+                  <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="page.training">page.training</span></span>
+                  <span class="news-one__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">19–20 Desember 2023</span><span lang="en">19–20 December 2023</span></span>
+                </div>
+                <h3 class="news-one__title"><span>KAKI Menekankan Pentingnya Bisnis dalam upaya Anti-Korupsi dalam Integrity Champions Forum, Tashkent, Uzbekistan</span></h3>
+                <p class="news-one__text">KAKI hadir sebagai pembicara dalam “Integrity Champions Forum panel 1: International Perspectives on Corruption”.</p>
+                <span class="news-one__read-more news-one__read-more--muted"><span lang="id">Arsip lengkap tersedia di situs KAKI</span><span lang="en">Full archive available on the KAKI website</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-sm-12 reveal" style="--delay:0ms">
+            <div class="news-one__single">
+              <div class="news-one__img">
+                <img src="assets/img/event-3.jpg" width="800" height="450" alt="" loading="lazy" decoding="async">
+              </div>
+              <div class="news-one__content">
+                <div class="news-one__meta">
+                  <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="page.training">page.training</span></span>
+                  <span class="news-one__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">13 November 2023</span><span lang="en">13 November 2023</span></span>
+                </div>
+                <h3 class="news-one__title"><span>KAKI mengadvokasi Pentingnya Aksi Kolektif Bisnis untuk Memerangi Korupsi</span></h3>
+                <p class="news-one__text">Ketua KAKI, Erry Riyana Hardjapamekas, menjadi pembicara pada Workshop KPK–UNODC “Review Implementasi UNCAC di Indonesia” — satu-satunya pembicara dari pihak swasta.</p>
+                <span class="news-one__read-more news-one__read-more--muted"><span lang="id">Arsip lengkap tersedia di situs KAKI</span><span lang="en">Full archive available on the KAKI website</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-sm-12 reveal" style="--delay:100ms">
+            <div class="news-one__single">
+              <div class="news-one__img">
+                <img src="assets/img/news-4.jpg" width="800" height="450" alt="" loading="lazy" decoding="async">
+              </div>
+              <div class="news-one__content">
+                <div class="news-one__meta">
+                  <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="page.training">page.training</span></span>
+                  <span class="news-one__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">27 September 2023</span><span lang="en">27 September 2023</span></span>
+                </div>
+                <h3 class="news-one__title"><span>KAKI Conference: “Strengthening Business Integrity: Creating a sustainable Economic Community in the ASEAN Indo-Pacific Region”</span></h3>
+                <p class="news-one__text">Konferensi Koalisi Aksi Kolektif Bisnis bertema penguatan integritas bisnis di kawasan Indo-Pasifik ASEAN, di Jakarta.</p>
+                <span class="news-one__read-more news-one__read-more--muted"><span lang="id">Arsip lengkap tersedia di situs KAKI</span><span lang="en">Full archive available on the KAKI website</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-sm-12 reveal" style="--delay:0ms">
+            <div class="news-one__single">
+              <div class="news-one__img">
+                <img src="assets/img/event-1.jpg" width="800" height="450" alt="" loading="lazy" decoding="async">
+              </div>
+              <div class="news-one__content">
+                <div class="news-one__meta">
+                  <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="page.training">page.training</span></span>
+                  <span class="news-one__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">26 September 2023</span><span lang="en">26 September 2023</span></span>
+                </div>
+                <h3 class="news-one__title"><span>Roundtable Discussion tentang Pilar 4: Fair Economy untuk Indo Pacific Economic Framework (IPEF)</span></h3>
+                <p class="news-one__text">KAKI bekerja sama dengan Center for International Private Enterprise mengembangkan white paper tentang Pilar 4: Fair Economy untuk IPEF.</p>
+                <span class="news-one__read-more news-one__read-more--muted"><span lang="id">Arsip lengkap tersedia di situs KAKI</span><span lang="en">Full archive available on the KAKI website</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-sm-12 reveal" style="--delay:100ms">
+            <div class="news-one__single">
+              <div class="news-one__img">
+                <img src="assets/img/event-2.jpg" width="800" height="450" alt="" loading="lazy" decoding="async">
+              </div>
+              <div class="news-one__content">
+                <div class="news-one__meta">
+                  <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="page.training">page.training</span></span>
+                  <span class="news-one__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">10 Juni 2023</span><span lang="en">10 June 2023</span></span>
+                </div>
+                <h3 class="news-one__title"><span>KAKI hadir dalam Rapat Pansel Calon Pimpinan dan Dewan Pengawas KPK 2024-2029 dari unsur CSO</span></h3>
+                <p class="news-one__text">Anggota Taskforce KAKI, James Simanjuntak, menyampaikan masukan CSO terkait seleksi calon pimpinan dan Dewan Pengawas KPK, menekankan tata kelola dan etika moral sebagai kriteria terpenting.</p>
+                <span class="news-one__read-more news-one__read-more--muted"><span lang="id">Arsip lengkap tersedia di situs KAKI</span><span lang="en">Full archive available on the KAKI website</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-sm-12 reveal" style="--delay:0ms">
+            <div class="news-one__single">
+              <div class="news-one__img">
+                <img src="assets/img/event-3.jpg" width="800" height="450" alt="" loading="lazy" decoding="async">
+              </div>
+              <div class="news-one__content">
+                <div class="news-one__meta">
+                  <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="page.training">page.training</span></span>
+                  <span class="news-one__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">22–23 Mei 2023</span><span lang="en">22–23 May 2023</span></span>
+                </div>
+                <h3 class="news-one__title"><span>Kick Off Program Sertifikasi Koalisi Anti Korupsi Indonesia</span></h3>
+                <p class="news-one__text">Pelatihan Asesor Asesmen Mandiri KAKI diikuti PT MaxPower, PT Sigma Energy Compressindo Tbk, PT Mitra Bhadra Consulting, PT Binaman Utama, PT Supra International, PT Selamat Sempurna Tbk, dan PT Voksel Indonesia Tbk, dihadiri perwakilan CAC Thailand dan CIPE.</p>
+                <span class="news-one__read-more news-one__read-more--muted"><span lang="id">Arsip lengkap tersedia di situs KAKI</span><span lang="en">Full archive available on the KAKI website</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-sm-12 reveal" style="--delay:100ms">
+            <div class="news-one__single">
+              <div class="news-one__img">
+                <img src="assets/img/news-4.jpg" width="800" height="450" alt="" loading="lazy" decoding="async">
+              </div>
+              <div class="news-one__content">
+                <div class="news-one__meta">
+                  <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="page.training">page.training</span></span>
+                  <span class="news-one__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">3 tahun yang lalu</span><span lang="en">3 years ago</span></span>
+                </div>
+                <h3 class="news-one__title"><span>KAKI Assesment Workshop 75 Checklist</span></h3>
+                <p class="news-one__text">Dalam acara ini PT Moya Indonesia dan PT Selamat Sempurna Tbk menandatangani declaration of intent, menyusul PT Max Power Indonesia, PT Sigma Energi Compressindo Tbk, PT Supra Internasional, PT Island Concepts Indonesia Tbk, CV Sembiring Consultant, dan CV Sembiring Ferdianza.</p>
+                <span class="news-one__read-more news-one__read-more--muted"><span lang="id">Arsip lengkap tersedia di situs KAKI</span><span lang="en">Full archive available on the KAKI website</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-sm-12 reveal" style="--delay:0ms">
+            <div class="news-one__single">
+              <div class="news-one__img">
+                <img src="assets/img/event-1.jpg" width="800" height="450" alt="" loading="lazy" decoding="async">
+              </div>
+              <div class="news-one__content">
+                <div class="news-one__meta">
+                  <span class="news-one__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9h4"/><path d="M18 14h-8M18 18h-8M18 10h-8"/></svg><span data-i18n="page.training">page.training</span></span>
+                  <span class="news-one__date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg><span lang="id">3 tahun yang lalu</span><span lang="en">3 years ago</span></span>
+                </div>
+                <h3 class="news-one__title"><span>Focus Group Discussion: Council for The Coalition</span></h3>
+                <p class="news-one__text">Sejumlah asosiasi bisnis terkemuka di Indonesia membentuk Council for the CAC Program untuk memandu dan mengundang perusahaan bergabung dalam koalisi.</p>
+                <span class="news-one__read-more news-one__read-more--muted"><span lang="id">Arsip lengkap tersedia di situs KAKI</span><span lang="en">Full archive available on the KAKI website</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER START  →  blade: layouts/footer.blade.php
+       Struktur 2 kolom (about + contact) + bottom bar, sama seperti asli.
+       ============================================================ -->
+  <footer class="site-footer" id="kontak">
+    <div class="site-footer-bg" aria-hidden="true"></div>
+    <div class="container">
+
+      <div class="site-footer__top">
+        <div class="row">
+
+          <div class="col-xl-6 col-lg-6 col-md-6 reveal">
+            <div class="footer-widget__column footer-widget__about">
+              <div class="footer-widget__logo">
+                <a href="index.html">
+                  <img src="assets/img/logo-kaki.png" width="150" height="45"
+                       alt="KAKI — Koalisi Anti Korupsi Indonesia"
+                       style="background:#fff;border-radius:10px;padding:10px 12px" loading="lazy">
+                </a>
+              </div>
+              <div class="footer-widget__about-text-box">
+                <h5 class="footer-widget text-white">KAKI / CAC Indonesia</h5>
+                <p class="footer-widget__about-text" data-i18n="footer.tagline">
+                  Suatu platform bagi sektor swasta Indonesia untuk secara kolektif menciptakan,
+                  mengadopsi, dan menyebarkan anti-korupsi yang efektif dan kebijakan kepatuhan,
+                  mengambil inisiatif untuk mengurangi korupsi dan mempromosikan ekosistem bisnis
+                  yang bersih.
+                </p>
+              </div>
+
+              <ul class="footer-widget__social">
+                <li>
+                  <a href="https://www.youtube.com/channel/UCcSg9Xd0r3ZtyU6OS3qcvMQ" target="_blank" rel="noopener noreferrer" aria-label="Kanal YouTube KAKI">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.5-.45-5.18a2.9 2.9 0 0 0-2.04-2.05C18.82 4.3 12 4.3 12 4.3s-6.82 0-8.51.47A2.9 2.9 0 0 0 1.45 6.8C1 8.5 1 12 1 12s0 3.5.45 5.18a2.9 2.9 0 0 0 2.04 2.05c1.69.47 8.51.47 8.51.47s6.82 0 8.51-.47a2.9 2.9 0 0 0 2.04-2.05C23 15.5 23 12 23 12zM9.75 15.27V8.73L15.5 12z"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:KAKI.secretariat@gmail.com" aria-label="Kirim email ke sekretariat KAKI">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-6 reveal" style="--delay:100ms">
+            <div class="footer-widget__column footer-widget__contact clearfix">
+              <h3 class="footer-widget__title" data-i18n="footer.contact">Kontak</h3>
+
+              <ul class="footer-widget__contact-list list-unstyled clearfix">
+                <li>
+                  <div class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+                  </div>
+                  <div class="text">
+                    <p><a href="mailto:KAKI.secretariat@gmail.com">KAKI.secretariat@gmail.com</a></p>
+                    <p><a href="mailto:dina@iicd.or.id">dina@iicd.or.id</a></p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Gedung Prof. M. Sadli (Gedung Magister Akuntansi)<br>
+                      Lt. 1 Jl. Salemba No.4, RT.4/RW.6,<br>
+                      Kenari, Kec. Senen, Kota Jakarta Pusat,<br>
+                      Daerah Khusus Ibukota Jakarta 10430.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="footer-widget__open-hour">
+                <h3 class="footer-widget__open-hour-title" data-i18n="footer.hours">Jam Operasional</h3>
+                <h3 class="footer-widget__open-hour-text" data-i18n-html="footer.hoursTxt">
+                  Senin – Jumat: 09.00 – 16.00 WIB<br>Sabtu – Minggu: Tutup
+                </h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="site-footer__bottom-inner">
+          <p class="site-footer__bottom-text">
+            &copy; <span data-i18n="footer.copyright">Hak cipta</span> <span data-year>2026</span> CAC-Indonesia
+          </p>
+          <ul class="site-footer__bottom-links">
+            <li><a href="about.html" data-i18n="nav.about">Tentang KAKI</a></li>
+            <li><a href="join-us.html" data-i18n="nav.join">Bergabung</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- ============================================================
+       FOOTER END
+       ============================================================ -->
+
+  <!-- Tombol kembali ke atas -->
+  <button class="to-top" type="button" data-to-top data-i18n-aria="common.toTop" aria-label="Kembali ke atas halaman">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

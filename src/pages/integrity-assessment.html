@@ -1,0 +1,498 @@
+<!--@meta
+title: Self-Assessment Integritas — CAC Indonesia
+title_en: Integrity Assessment — CAC Indonesia
+description: Ukur kesiapan praktik anti-korupsi perusahaan Anda menggunakan 14 area KAKI 75 Anti-Bribery Compliance Checklist.
+description_en: Measure your company's anti-corruption readiness across the 14 areas of the KAKI 75 Anti-Bribery Compliance Checklist.
+page: integrity-assessment
+output: integrity-assessment.html
+-->
+    <!-- ============================================================
+         INTEGRITY ASSESSMENT — halaman baru.
+
+         Dokumen struktur situs hanya menulis judul + catatan "Bisakah buat
+         seperti Quiz", tanpa daftar pertanyaan. Empat belas pertanyaan di
+         bawah DITURUNKAN dari 14 area penilaian KAKI 75 Checklist (satu
+         pertanyaan per area) dan MASIH PERLU DIVALIDASI tim KAKI.
+
+         Seluruh perhitungan dilakukan di peramban — tidak ada data yang
+         dikirim ke server. Logikanya ada di js/main.js modul 10.
+         Ubah pertanyaan lewat berkas ini, bukan lewat JavaScript.
+         ============================================================ -->
+    <section class="quiz" data-quiz aria-labelledby="quizTitle">
+      <div class="container container--narrow">
+
+        <!-- Layar pembuka -->
+        <div class="quiz__intro" data-quiz-intro>
+          <div class="section-title reveal">
+            <div class="section-sub-title-box">
+              <div class="section-title-shape-1" aria-hidden="true"></div>
+              <p class="section-sub-title" data-i18n="quiz.sub">self-assessment</p>
+            </div>
+            <h1 class="section-title__title" id="quizTitle" data-i18n="quiz.title">Seberapa Siap Perusahaan Anda?</h1>
+            <p class="section-title__text" data-i18n="quiz.lead">Ukur praktik anti-korupsi dan integritas bisnis perusahaan Anda menggunakan KAKI 75 Anti-Bribery Compliance Checklist.</p>
+          </div>
+
+          <ul class="quiz__facts reveal" style="--delay:60ms">
+            <li><strong>14</strong> <span lang="id">area penilaian</span><span lang="en">assessment areas</span></li>
+            <li><strong>±3</strong> <span lang="id">menit</span><span lang="en">minutes</span></li>
+            <li><strong>0</strong> <span lang="id">data dikirim</span><span lang="en">data sent</span></li>
+          </ul>
+
+          <p class="quiz__note reveal" style="--delay:80ms" data-i18n="quiz.note">Hasil bersifat indikatif dan tidak menggantikan proses sertifikasi.</p>
+
+          <p class="quiz__start reveal" style="--delay:100ms">
+            <button class="thm-btn" type="button" data-quiz-start>
+              <span data-i18n="quiz.start">Mulai Self-Assessment</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+          </p>
+        </div>
+
+        <!-- Layar pertanyaan -->
+        <div class="quiz__runner" data-quiz-runner hidden>
+          <div class="quiz__progress">
+            <div class="quiz__progress-meta">
+              <span>
+                <span data-i18n="quiz.question">Pertanyaan</span>
+                <b data-quiz-current>1</b>
+                <span data-i18n="quiz.of">dari</span>
+                <b data-quiz-total>14</b>
+              </span>
+              <span class="quiz__progress-pct" data-quiz-pct>0%</span>
+            </div>
+            <div class="quiz__progress-track">
+              <div class="quiz__progress-bar" data-quiz-bar
+                   role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+            </div>
+          </div>
+
+          <ol class="quiz__questions" data-quiz-questions>
+          <li class="quiz__q" data-quiz-q
+              data-area-id="Prinsip Anti-Penyuapan"
+              data-area-en="Anti-Bribery Principles">
+            <p class="quiz__area">
+              <span lang="id">Prinsip Anti-Penyuapan</span><span lang="en">Anti-Bribery Principles</span>
+            </p>
+            <h2 class="quiz__text">
+              <span lang="id">Perusahaan memiliki pernyataan prinsip anti-penyuapan yang disahkan secara resmi dan diketahui seluruh karyawan.</span><span lang="en">The company has a formally endorsed anti-bribery principles statement that all employees are aware of.</span>
+            </h2>
+            <div class="quiz__options">
+              <label class="quiz__option">
+                <input type="radio" name="q1" value="2">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.yes">quiz.yes</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q1" value="1">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.partial">quiz.partial</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q1" value="0">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.no">quiz.no</span>
+              </label>
+            </div>
+          </li>
+          <li class="quiz__q" data-quiz-q
+              data-area-id="Program Anti-Penyuapan"
+              data-area-en="Anti-Bribery Program">
+            <p class="quiz__area">
+              <span lang="id">Program Anti-Penyuapan</span><span lang="en">Anti-Bribery Program</span>
+            </p>
+            <h2 class="quiz__text">
+              <span lang="id">Ada program anti-penyuapan yang terdokumentasi dan berjalan, bukan sekadar pernyataan komitmen.</span><span lang="en">A documented anti-bribery programme is in place and running, not merely a statement of commitment.</span>
+            </h2>
+            <div class="quiz__options">
+              <label class="quiz__option">
+                <input type="radio" name="q2" value="2">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.yes">quiz.yes</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q2" value="1">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.partial">quiz.partial</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q2" value="0">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.no">quiz.no</span>
+              </label>
+            </div>
+          </li>
+          <li class="quiz__q" data-quiz-q
+              data-area-id="Penilaian Risiko"
+              data-area-en="Risk Assessment">
+            <p class="quiz__area">
+              <span lang="id">Penilaian Risiko</span><span lang="en">Risk Assessment</span>
+            </p>
+            <h2 class="quiz__text">
+              <span lang="id">Perusahaan melakukan penilaian risiko korupsi secara berkala dan hasilnya terdokumentasi.</span><span lang="en">The company carries out corruption risk assessments at regular intervals and documents the results.</span>
+            </h2>
+            <div class="quiz__options">
+              <label class="quiz__option">
+                <input type="radio" name="q3" value="2">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.yes">quiz.yes</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q3" value="1">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.partial">quiz.partial</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q3" value="0">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.no">quiz.no</span>
+              </label>
+            </div>
+          </li>
+          <li class="quiz__q" data-quiz-q
+              data-area-id="Kebijakan Perusahaan"
+              data-area-en="Corporate Policies">
+            <p class="quiz__area">
+              <span lang="id">Kebijakan Perusahaan</span><span lang="en">Corporate Policies</span>
+            </p>
+            <h2 class="quiz__text">
+              <span lang="id">Kebijakan turunan seperti pengadaan, keuangan, dan pemasaran sudah selaras dengan kebijakan anti-penyuapan.</span><span lang="en">Supporting policies such as procurement, finance, and marketing are aligned with the anti-bribery policy.</span>
+            </h2>
+            <div class="quiz__options">
+              <label class="quiz__option">
+                <input type="radio" name="q4" value="2">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.yes">quiz.yes</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q4" value="1">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.partial">quiz.partial</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q4" value="0">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.no">quiz.no</span>
+              </label>
+            </div>
+          </li>
+          <li class="quiz__q" data-quiz-q
+              data-area-id="Hadiah, Jamuan, dan Sponsorship"
+              data-area-en="Gifts, Hospitality &amp; Sponsorship">
+            <p class="quiz__area">
+              <span lang="id">Hadiah, Jamuan, dan Sponsorship</span><span lang="en">Gifts, Hospitality &amp; Sponsorship</span>
+            </p>
+            <h2 class="quiz__text">
+              <span lang="id">Ada aturan dan batas nilai yang jelas untuk pemberian maupun penerimaan hadiah, jamuan, dan sponsorship.</span><span lang="en">Clear rules and value thresholds exist for giving and receiving gifts, hospitality, and sponsorship.</span>
+            </h2>
+            <div class="quiz__options">
+              <label class="quiz__option">
+                <input type="radio" name="q5" value="2">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.yes">quiz.yes</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q5" value="1">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.partial">quiz.partial</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q5" value="0">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.no">quiz.no</span>
+              </label>
+            </div>
+          </li>
+          <li class="quiz__q" data-quiz-q
+              data-area-id="Benturan Kepentingan"
+              data-area-en="Conflict of Interest">
+            <p class="quiz__area">
+              <span lang="id">Benturan Kepentingan</span><span lang="en">Conflict of Interest</span>
+            </p>
+            <h2 class="quiz__text">
+              <span lang="id">Karyawan wajib mengungkapkan benturan kepentingan, dan pengungkapan tersebut dicatat serta ditindaklanjuti.</span><span lang="en">Employees are required to disclose conflicts of interest, and those disclosures are recorded and acted upon.</span>
+            </h2>
+            <div class="quiz__options">
+              <label class="quiz__option">
+                <input type="radio" name="q6" value="2">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.yes">quiz.yes</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q6" value="1">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.partial">quiz.partial</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q6" value="0">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.no">quiz.no</span>
+              </label>
+            </div>
+          </li>
+          <li class="quiz__q" data-quiz-q
+              data-area-id="Pengelolaan Pihak Ketiga"
+              data-area-en="Third Party Management">
+            <p class="quiz__area">
+              <span lang="id">Pengelolaan Pihak Ketiga</span><span lang="en">Third Party Management</span>
+            </p>
+            <h2 class="quiz__text">
+              <span lang="id">Mitra, agen, dan pemasok melalui uji tuntas integritas sebelum kerja sama dimulai.</span><span lang="en">Partners, agents, and suppliers go through integrity due diligence before an engagement begins.</span>
+            </h2>
+            <div class="quiz__options">
+              <label class="quiz__option">
+                <input type="radio" name="q7" value="2">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.yes">quiz.yes</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q7" value="1">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.partial">quiz.partial</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q7" value="0">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.no">quiz.no</span>
+              </label>
+            </div>
+          </li>
+          <li class="quiz__q" data-quiz-q
+              data-area-id="Komitmen Dewan dan Manajemen"
+              data-area-en="Board &amp; Management Commitment">
+            <p class="quiz__area">
+              <span lang="id">Komitmen Dewan dan Manajemen</span><span lang="en">Board &amp; Management Commitment</span>
+            </p>
+            <h2 class="quiz__text">
+              <span lang="id">Dewan dan manajemen puncak secara aktif dan terbuka menyuarakan komitmen antikorupsi.</span><span lang="en">The board and senior management actively and visibly voice the anti-corruption commitment.</span>
+            </h2>
+            <div class="quiz__options">
+              <label class="quiz__option">
+                <input type="radio" name="q8" value="2">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.yes">quiz.yes</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q8" value="1">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.partial">quiz.partial</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q8" value="0">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.no">quiz.no</span>
+              </label>
+            </div>
+          </li>
+          <li class="quiz__q" data-quiz-q
+              data-area-id="Sumber Daya Manusia"
+              data-area-en="Human Resources">
+            <p class="quiz__area">
+              <span lang="id">Sumber Daya Manusia</span><span lang="en">Human Resources</span>
+            </p>
+            <h2 class="quiz__text">
+              <span lang="id">Aspek integritas masuk dalam proses rekrutmen, kontrak kerja, dan penilaian kinerja karyawan.</span><span lang="en">Integrity is built into recruitment, employment contracts, and performance reviews.</span>
+            </h2>
+            <div class="quiz__options">
+              <label class="quiz__option">
+                <input type="radio" name="q9" value="2">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.yes">quiz.yes</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q9" value="1">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.partial">quiz.partial</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q9" value="0">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.no">quiz.no</span>
+              </label>
+            </div>
+          </li>
+          <li class="quiz__q" data-quiz-q
+              data-area-id="Pelatihan dan Peningkatan Kesadaran"
+              data-area-en="Training &amp; Awareness">
+            <p class="quiz__area">
+              <span lang="id">Pelatihan dan Peningkatan Kesadaran</span><span lang="en">Training &amp; Awareness</span>
+            </p>
+            <h2 class="quiz__text">
+              <span lang="id">Karyawan mendapat pelatihan antikorupsi secara berkala, disesuaikan dengan tingkat risiko pekerjaannya.</span><span lang="en">Employees receive regular anti-corruption training, matched to the risk exposure of their role.</span>
+            </h2>
+            <div class="quiz__options">
+              <label class="quiz__option">
+                <input type="radio" name="q10" value="2">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.yes">quiz.yes</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q10" value="1">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.partial">quiz.partial</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q10" value="0">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.no">quiz.no</span>
+              </label>
+            </div>
+          </li>
+          <li class="quiz__q" data-quiz-q
+              data-area-id="Pengendalian Internal"
+              data-area-en="Internal Controls">
+            <p class="quiz__area">
+              <span lang="id">Pengendalian Internal</span><span lang="en">Internal Controls</span>
+            </p>
+            <h2 class="quiz__text">
+              <span lang="id">Ada pengendalian internal seperti otorisasi berjenjang dan pemisahan tugas untuk mencegah penyuapan.</span><span lang="en">Internal controls such as tiered authorisation and segregation of duties are in place to prevent bribery.</span>
+            </h2>
+            <div class="quiz__options">
+              <label class="quiz__option">
+                <input type="radio" name="q11" value="2">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.yes">quiz.yes</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q11" value="1">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.partial">quiz.partial</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q11" value="0">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.no">quiz.no</span>
+              </label>
+            </div>
+          </li>
+          <li class="quiz__q" data-quiz-q
+              data-area-id="Pembukuan dan Pencatatan"
+              data-area-en="Books &amp; Records">
+            <p class="quiz__area">
+              <span lang="id">Pembukuan dan Pencatatan</span><span lang="en">Books &amp; Records</span>
+            </p>
+            <h2 class="quiz__text">
+              <span lang="id">Seluruh transaksi tercatat secara akurat dan tidak ada dana maupun rekening di luar pembukuan.</span><span lang="en">All transactions are recorded accurately and there are no off-the-books funds or accounts.</span>
+            </h2>
+            <div class="quiz__options">
+              <label class="quiz__option">
+                <input type="radio" name="q12" value="2">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.yes">quiz.yes</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q12" value="1">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.partial">quiz.partial</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q12" value="0">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.no">quiz.no</span>
+              </label>
+            </div>
+          </li>
+          <li class="quiz__q" data-quiz-q
+              data-area-id="Pemantauan dan Audit Internal"
+              data-area-en="Monitoring &amp; Internal Audit">
+            <p class="quiz__area">
+              <span lang="id">Pemantauan dan Audit Internal</span><span lang="en">Monitoring &amp; Internal Audit</span>
+            </p>
+            <h2 class="quiz__text">
+              <span lang="id">Audit internal secara berkala menguji efektivitas program anti-penyuapan, bukan hanya kepatuhan administratif.</span><span lang="en">Internal audit periodically tests the effectiveness of the anti-bribery programme, not just administrative compliance.</span>
+            </h2>
+            <div class="quiz__options">
+              <label class="quiz__option">
+                <input type="radio" name="q13" value="2">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.yes">quiz.yes</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q13" value="1">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.partial">quiz.partial</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q13" value="0">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.no">quiz.no</span>
+              </label>
+            </div>
+          </li>
+          <li class="quiz__q" data-quiz-q
+              data-area-id="Pelaporan dan Perbaikan Berkelanjutan"
+              data-area-en="Reporting &amp; Continuous Improvement">
+            <p class="quiz__area">
+              <span lang="id">Pelaporan dan Perbaikan Berkelanjutan</span><span lang="en">Reporting &amp; Continuous Improvement</span>
+            </p>
+            <h2 class="quiz__text">
+              <span lang="id">Tersedia kanal pelaporan pelanggaran yang aman, dan temuannya dipakai untuk memperbaiki program.</span><span lang="en">A safe whistleblowing channel is available, and its findings are used to improve the programme.</span>
+            </h2>
+            <div class="quiz__options">
+              <label class="quiz__option">
+                <input type="radio" name="q14" value="2">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.yes">quiz.yes</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q14" value="1">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.partial">quiz.partial</span>
+              </label>
+              <label class="quiz__option">
+                <input type="radio" name="q14" value="0">
+                <span class="quiz__option-mark" aria-hidden="true"></span>
+                <span class="quiz__option-text" data-i18n="quiz.no">quiz.no</span>
+              </label>
+            </div>
+          </li>
+          </ol>
+
+          <div class="quiz__nav">
+            <button class="thm-btn btn--outline" type="button" data-quiz-prev>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+              <span data-i18n="quiz.prev">Sebelumnya</span>
+            </button>
+            <button class="thm-btn" type="button" data-quiz-next disabled>
+              <span data-i18n="quiz.next">Berikutnya</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Layar hasil -->
+        <div class="quiz__result" data-quiz-result hidden tabindex="-1">
+          <div class="section-title">
+            <div class="section-sub-title-box">
+              <div class="section-title-shape-1" aria-hidden="true"></div>
+              <p class="section-sub-title" data-i18n="quiz.resultTitle">Hasil Self-Assessment</p>
+            </div>
+            <h2 class="section-title__title" data-quiz-level-title>—</h2>
+          </div>
+
+          <div class="quiz__score">
+            <div class="quiz__score-figure">
+              <span class="quiz__score-value" data-quiz-score>0%</span>
+              <span class="quiz__score-label" data-i18n="quiz.score">Skor kesiapan</span>
+            </div>
+            <p class="quiz__score-desc" data-quiz-level-desc></p>
+          </div>
+
+          <div class="quiz__gaps">
+            <h3 class="quiz__gaps-title" data-i18n="quiz.gapsTitle">Area yang perlu diperkuat</h3>
+            <ul class="quiz__gaps-list" data-quiz-gaps></ul>
+          </div>
+
+          <div class="quiz__result-actions">
+            <a class="thm-btn" href="join-us.html">
+              <span data-i18n="quiz.toJoin">Bergabung dengan KAKI</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a class="thm-btn btn--outline" href="certification.html">
+              <span data-i18n="quiz.toCert">Pelajari Sertifikasi</span>
+            </a>
+            <button class="quiz__retake" type="button" data-quiz-retake>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+              <span data-i18n="quiz.retake">Ulangi</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>

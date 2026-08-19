@@ -1,0 +1,96 @@
+<!--@meta
+title: Anggota Kami — CAC Indonesia
+title_en: Our Member — CAC Indonesia
+description: Daftar 17 perusahaan anggota Koalisi Anti Korupsi Indonesia beserta status keanggotaannya.
+description_en: List of 17 member companies of the Indonesia Anti-Corruption Coalition and their membership status.
+page: member
+output: member.html
+-->
+    <!-- ============================================================
+         Our Member — struktur sama dengan paging.blade.php
+         Dua blok berdampingan; yang tidak aktif disembunyikan CSS.
+           <div lang="id"> → Page::where('slug','member')->content
+           <div lang="en"> → Page::where('slug','member')->content_en   (kolom baru)
+         Di Laravel cukup dirender salah satu sesuai app()->getLocale().
+         ============================================================ -->
+    <div class="container">
+      <div class="page-content">
+
+        <div lang="id">
+          <h1>Anggota Kami</h1>
+          <p>Perusahaan yang telah menyatakan komitmennya untuk bebas dari korupsi bersama
+          Koalisi Anti Korupsi Indonesia. Status <strong>Declared</strong> berarti perusahaan telah
+          menandatangani deklarasi komitmen, sedangkan <strong>Certified</strong> berarti telah melalui
+          proses sertifikasi 75 Checklist.</p>
+
+          <div class="table-wrap">
+            <table class="data-table">
+              <caption class="sr-only">Daftar perusahaan anggota KAKI beserta status keanggotaan</caption>
+              <thead>
+                <tr><th scope="col">No.</th><th scope="col">Nama Perusahaan</th><th scope="col">Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>PT Siloam International Hospitals Tbk</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>2</td><td>PT Eramet Indonesia Mining</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>3</td><td>PT Braga Teknologi Nusantara</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>4</td><td>PT Hexindo Adi Perkasa Tbk</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>5</td><td>PT Mahadana Dasha Utama</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>6</td><td>PT Bukit Asam Tbk</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>7</td><td>PT Binaman Utama-PPM Manajemen</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>8</td><td>PT Voksel Elektric Tbk</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>9</td><td>PT Mitra Bhadra Consulting</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>10</td><td>PT Moya Indonesia</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>11</td><td>CV Sembiring Consultant</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>12</td><td>CV Sembiring Ferdianza</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>13</td><td>PT Island Concepts Indonesia Tbk</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>14</td><td>PT Sigma Energy Kompressindo Tbk</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>15</td><td>PT Supra International Indonesia</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>16</td><td>PT MAXpower Indonesia</td><td><span class="badge badge--gold">Certified</span></td></tr>
+                <tr><td>17</td><td>PT Selamat Sampurna Tbk</td><td><span class="badge badge--red">Declared</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="table-note">Total <strong>17</strong> perusahaan anggota — 16 Declared, 1 Certified.</p>
+        </div>
+
+        <div lang="en">
+          <h1>Our Member</h1>
+          <p>Companies that have declared their commitment to be free from corruption together with
+          the Indonesia Anti-Corruption Coalition. <strong>Declared</strong> means the company has
+          signed the declaration of commitment; <strong>Certified</strong> means it has completed the
+          75 Checklist certification process.</p>
+
+          <div class="table-wrap">
+            <table class="data-table">
+              <caption class="sr-only">List of KAKI member companies and their membership status</caption>
+              <thead>
+                <tr><th scope="col">No.</th><th scope="col">Company Name</th><th scope="col">Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>PT Siloam International Hospitals Tbk</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>2</td><td>PT Eramet Indonesia Mining</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>3</td><td>PT Braga Teknologi Nusantara</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>4</td><td>PT Hexindo Adi Perkasa Tbk</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>5</td><td>PT Mahadana Dasha Utama</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>6</td><td>PT Bukit Asam Tbk</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>7</td><td>PT Binaman Utama-PPM Manajemen</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>8</td><td>PT Voksel Elektric Tbk</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>9</td><td>PT Mitra Bhadra Consulting</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>10</td><td>PT Moya Indonesia</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>11</td><td>CV Sembiring Consultant</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>12</td><td>CV Sembiring Ferdianza</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>13</td><td>PT Island Concepts Indonesia Tbk</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>14</td><td>PT Sigma Energy Kompressindo Tbk</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>15</td><td>PT Supra International Indonesia</td><td><span class="badge badge--red">Declared</span></td></tr>
+                <tr><td>16</td><td>PT MAXpower Indonesia</td><td><span class="badge badge--gold">Certified</span></td></tr>
+                <tr><td>17</td><td>PT Selamat Sampurna Tbk</td><td><span class="badge badge--red">Declared</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="table-note">Total <strong>17</strong> member companies — 16 Declared, 1 Certified.</p>
+        </div>
+
+      </div>
+    </div>
