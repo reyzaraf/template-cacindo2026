@@ -475,7 +475,7 @@ html[data-lang="en"] [lang="id"] { display: none !important; }
 .main-menu__logo a { display: block; }
 
 .main-menu__left { display: flex; align-items: center; }
-.main-menu__list { display: flex; align-items: center; gap: 4px; }
+.main-menu__list { display: flex; align-items: center; gap: 0; }
 .main-menu__list > li { position: relative; }
 
 /* Tautan menu: garis bawah merah yang tumbuh, bukan pil berlatar */
@@ -485,7 +485,7 @@ html[data-lang="en"] [lang="id"] { display: none !important; }
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 26px 14px;
+  padding: 26px 11px;
   font-size: .9375rem;
   font-weight: 600;
   color: var(--c-heading);
@@ -496,7 +496,7 @@ html[data-lang="en"] [lang="id"] { display: none !important; }
 .main-menu__list > li > .menu-toggle::after {
   content: "";
   position: absolute;
-  left: 14px; right: 14px;
+  left: 11px; right: 11px;
   bottom: 18px;
   height: 2px;
   background-color: var(--c-red);
@@ -1602,6 +1602,8 @@ html[data-lang="en"] [lang="id"] { display: none !important; }
 .quiz__nav button[disabled] { opacity: .4; pointer-events: none; }
 
 /* Hasil */
+/* beri jarak agar judul tidak tertutup menu sticky saat halaman auto-scroll */
+.quiz__runner, .quiz__result { scroll-margin-top: calc(var(--header-h) + 24px); }
 .quiz__result:focus { outline: none; }
 .quiz__score {
   display: flex;
@@ -1909,8 +1911,10 @@ html[data-lang="en"] [lang="id"] { display: none !important; }
   .row > .col-xl-12 { width: 100%; }
 }
 
-/* ---- Di bawah 992px: menu utama jadi drawer ---------------------------- */
-@media (max-width: 991.98px) {
+/* ---- Di bawah 1200px: menu utama jadi drawer --------------------------
+   Struktur menu baru memuat 7 item dengan label panjang; pada 992–1199px
+   barisnya tidak muat, jadi ambang drawer dinaikkan. */
+@media (max-width: 1199.98px) {
   .main-menu__left .main-menu__list { display: none; }
   .mobile-nav__toggler { display: inline-flex; }
   .main-header__top-inner { flex-direction: column; align-items: flex-start; gap: 8px; }

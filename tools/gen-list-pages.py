@@ -223,19 +223,22 @@ NEWS = [
          url="artikel-ace-award-doha.html"),
 ]
 
-NEWS_IMGS = [f"assets/img/news-{i}.jpg" for i in (1, 2, 3, 4)]
-EVENT_IMGS = [f"assets/img/event-{i}.jpg" for i in (1, 2, 3)] + ["assets/img/news-4.jpg"]
+# Gambar diambil dari situs asli dan diurutkan sama persis dengan daftar di
+# sana, sehingga tiap kegiatan memakai fotonya sendiri (lihat tools/fetch-images.py).
+SEMINAR_IMGS  = [f"assets/img/seminar-{i:02d}.jpg" for i in range(1, 22)]
+TRAINING_IMGS = [f"assets/img/training-{i:02d}.jpg" for i in range(1, 10)]
+NEWS_IMGS     = [f"assets/img/news-{i}.jpg" for i in (1, 2, 3, 4)]
 
 PAGES = [
     ("seminar", "Seminar — CAC Indonesia", "Seminar — CAC Indonesia",
      "Arsip seminar, webinar, forum, dan roundtable Koalisi Anti Korupsi Indonesia (KAKI) sejak 2019.",
      "Archive of seminars, webinars, forums, and roundtables of the Indonesia Anti-Corruption Coalition since 2019.",
-     "page.seminar", "page.seminar", SEMINAR, "events.blade.php ($events, category=seminar)", EVENT_IMGS),
+     "page.seminar", "page.seminar", SEMINAR, "events.blade.php ($events, category=seminar)", SEMINAR_IMGS),
 
     ("training", "Pelatihan — CAC Indonesia", "Training — CAC Indonesia",
      "Arsip pelatihan, workshop asesor 75 Checklist, roundtable, dan advokasi kebijakan KAKI.",
      "Archive of KAKI training, 75 Checklist assessor workshops, roundtables, and policy advocacy.",
-     "page.training", "page.training", TRAINING, "events.blade.php ($events, category=training)", EVENT_IMGS),
+     "page.training", "page.training", TRAINING, "events.blade.php ($events, category=training)", TRAINING_IMGS),
 
     ("news", "Berita — CAC Indonesia", "News — CAC Indonesia",
      "Semua berita resmi dari Koalisi Anti Korupsi Indonesia (KAKI).",

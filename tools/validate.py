@@ -59,15 +59,20 @@ def main() -> int:
 
     used_keys = set()
 
-    # Sebagian kunci hanya dipanggil saat runtime dari JavaScript (mis. label
-    # tombol kuis dan teks hasil), jadi ikut dipindai supaya tidak dikira mati.
+    # Sebagian kunci hanya dipanggil saat runtime dari JavaScript (label tombol
+    # kuis, judul & uraian hasil), jadi berkas JS ikut dipindai. Cara paling
+    # tahan: ambil semua literal string berbentuk "awalan.kunci" lalu cocokkan
+    # dengan kamus — literal yang bukan kunci otomatis terabaikan.
+    LITERAL = re.compile(r"'([a-z][A-Za-z0-9]*\.[A-Za-z0-9]+)'")
     for js_name in ("main.js", "i18n.js"):
         js_path = ROOT / "js" / js_name
-        if js_path.exists():
-            js_src = js_path.read_text(encoding="utf-8")
-            used_keys |= set(re.findall(r"t\(\s*'([A-Za-z0-9.]+)'", js_src))
-            used_keys |= set(re.findall(r"'(quiz\.lvl\d[TD])'", js_src))
-            used_keys |= set(re.findall(r"setAttribute\(\s*'data-i18n'\s*,\s*'([A-Za-z0-9.]+)'", js_src))
+        if not js_path.exists():
+            continue
+        js_src = js_path.read_text(encoding="utf-8")
+        used_keys |= {k for k in LITERAL.findall(js_src) if k in keys_id}
+        # kunci yang disusun lewat penggabungan, mis. 'quiz.lvl' + level + 'T'
+        for prefix in re.findall(r"'([a-z][A-Za-z0-9]*\.[A-Za-z]+)'\s*\+", js_src):
+            used_keys |= {k for k in keys_id if k.startswith(prefix)}
 
     for page in pages:
         raw = page.read_text(encoding='utf-8')

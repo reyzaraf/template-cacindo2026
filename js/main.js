@@ -19,7 +19,7 @@
   'use strict';
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var DESKTOP = window.matchMedia('(min-width: 992px)');
+  var DESKTOP = window.matchMedia('(min-width: 1200px)');   // sama dengan ambang drawer di CSS
 
   function onMediaChange(mq, fn) {
     if (mq.addEventListener) mq.addEventListener('change', fn);
